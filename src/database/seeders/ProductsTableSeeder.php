@@ -1,0 +1,152 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
+class ProductsTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $param = [
+            'name' => 'キウイ',
+            'price' => 800,
+            'image' => 'img/kiwi.png',
+            'description' => 'キウイは甘みと酸味のバランスが絶妙なフルーツです。ビタミンCなどの栄養素も豊富のため、美肌効果や疲労回復効果も期待できます。もぎたてフルーツのスムージーをお召し上がりください！'
+        ];
+        DB::table('products')->insert($param);
+
+        $params = [
+            ['product_id' => 1, 'season_id' => 3],
+            ['product_id' => 1, 'season_id' => 4]
+        ];
+        DB::table('product_season')->insert($params);
+
+        $param = [
+            'name' => 'ストロベリー',
+            'price' => 1200,
+            'image' => 'img/strawberry.png',
+            'description' => '大人から子供まで大人気のストロベリー。当店では鮮度抜群の完熟イチゴを使用しています。ビタミンCはもちろん食物繊維も豊富なため、腸内環境の改善も期待できます。もぎたてフルーツのスムージーをお召し上がりください！'
+        ];
+        DB::table('products')->insert($param);
+
+        $params = [
+            'product_id' => 2, 'season_id' => 1
+        ];
+        DB::table('product_season')->insert($params);
+
+        $param = [
+            'name' => 'オレンジ',
+            'price' => 850,
+            'image' => 'img/orange.png',
+            'description' => '当店では酸味と甘みのバランスが抜群のネーブルオレンジを使用しています。酸味は控えめで、甘さと濃厚な荷重が魅力の商品です。もぎたてフルーツのスムージーをお召し上がりください！'
+        ];
+        DB::table('products')->insert($param);
+
+        $params = [
+            'product_id' => 3, 'season_id' => 4
+        ];
+        DB::table('product_season')->insert($params);
+
+        $param = [
+            'name' => 'スイカ',
+            'price' => 700,
+            'image' => 'img/watermelon.png',
+            'description' => '甘くてシャリシャリの触感が魅力のスイカ。全体の90％が水分のため、暑い日の水分補給や熱中症予防、カロリーが気になる方にもおすすめの商品です。もぎたてフルーツのスムージーをお召し上がりください！'
+        ];
+        DB::table('products')->insert($param);
+
+                $params = [
+            'product_id' => 4, 'season_id' => 2
+        ];
+        DB::table('product_season')->insert($params);
+
+        $param = [
+            'name' => 'ビーチ',
+            'price' => 1000,
+            'image' => 'img/peach.png',
+            'description' => '芳醇な香りととろけるような甘さが魅力のピーチ。おいしさはもちろん見た目の可愛さも抜群の商品です。ビタミンEが豊富なため、生活習慣病の予防にもおすすめです。もぎたてフルーツのスムージーをお召し上がりください！'
+        ];
+        DB::table('products')->insert($param);
+
+        $params = [
+            'product_id' => 5, 'season_id' => 2
+        ];
+        DB::table('product_season')->insert($params);
+
+        $param = [
+            'name' => 'シャインマスカット',
+            'price' => 1400,
+            'image' => 'img/muscat.png',
+            'description' => '爽やかな香りと上品な甘みが特徴的なシャインマスカットは大人から子どもまで大人気のフルーツです。疲れた脳や体のエネルギー補給にも最適の商品です。もぎたてフルーツのスムージーをお召し上がりください！'
+        ];
+        DB::table('products')->insert($param);
+
+        $params = [
+            ['product_id' => 6, 'season_id' => 2],
+            ['product_id' => 6, 'season_id' => 3]
+        ];
+        DB::table('product_season')->insert($params);
+
+        $param = [
+            'name' => 'パイナップル',
+            'price' => 800,
+            'image' => 'img/pineapple.png',
+            'description' => '甘酸っぱさとトロピカルな香りが特徴のパイナップル。当店では甘さと酸味のバランスが絶妙な国産のパイナップルを使用しています。もぎたてフルーツのスムージーをお召し上がりください！'
+        ];
+        DB::table('products')->insert($param);
+
+        $params = [
+            ['product_id' => 7, 'season_id' => 1],
+            ['product_id' => 7, 'season_id' => 2]
+        ];
+        DB::table('product_season')->insert($params);
+
+        $param = [
+            'name' => 'ブドウ',
+            'price' => 1100,
+            'image' => 'img/grapes.png',
+            'description' => 'ブドウの中でも人気の高い国産の「巨峰」を使用しています。高い糖度と適度な酸味が魅力で、鮮やかなパープルで見た目も可愛い商品です。もぎたてフルーツのスムージーをお召し上がりください！'
+        ];
+        DB::table('products')->insert($param);
+
+        $params = [
+            ['product_id' => 8, 'season_id' => 2],
+            ['product_id' => 8, 'season_id' => 3]
+        ];
+        DB::table('product_season')->insert($params);
+
+        $param = [
+            'name' => 'バナナ',
+            'price' => 600,
+            'image' => 'img/banana.png',
+            'description' => '低カロリーでありながら栄養満点のため、ダイエット中の方にもおすすめの商品です。1杯でバナナの濃厚な甘みを存分に堪能できます。もぎたてフルーツのスムージーをお召し上がりください！'
+        ];
+        DB::table('products')->insert($param);
+
+        $params = [
+            'product_id' => 9, 'season_id' => 2
+        ];
+        DB::table('product_season')->insert($params);
+
+        $param = [
+            'name' => 'メロン',
+            'price' => 900,
+            'image' => 'img/melon.png',
+            'description' => '香りがよくジューシーで品のある甘さが人気のメロンスムージー。カリウムが多く含まれているためむくみ解消効果も抜群です。もぎたてフルーツのスムージーをお召し上がりください！'
+        ];
+        DB::table('products')->insert($param);
+
+        $params = [
+            ['product_id' => 10, 'season_id' => 1],
+            ['product_id' => 10, 'season_id' => 2]
+        ];
+        DB::table('product_season')->insert($params);
+    }
+}

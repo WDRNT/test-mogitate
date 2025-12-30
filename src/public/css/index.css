@@ -1,0 +1,104 @@
+.layout{
+    max-width: 1512px;
+    margin: 0 auto;
+
+}
+.content-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-header a{
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px #0000001A;
+    padding: 13px 20px;
+    color: #000;
+    text-decoration: none;
+    background-color: #FFA929;
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+}
+
+.sidebar{
+    flex: 2;
+}
+
+.sidebar input{
+    border-radius: 25px;
+    border: 1px solid #E0DFDE ;
+    padding: 14.5px 10px;
+}
+
+.sidebar button {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px #0000001A;
+    padding: 10px;
+    background-color: #F5C800;
+}
+
+.sidebar select {
+    border: 1px solid #E0DFDE;
+    padding: 11px 10px;
+}
+
+.sidebar-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-bottom: solid 1px #E0DFDE;
+    padding-bottom: 20px;
+}
+
+.card{
+    flex: 8;
+    display: flex;
+    gap: 20px;
+    /* カードを３つで折り返し */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card a {
+    color: #000;
+    text-decoration: none;
+}
+
+.shadow{
+    border-radius: 5px;
+    box-shadow: 0 0 10px #0000001A;
+}
+
+.content-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.text{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.text span{
+    font-size: 24px;
+}
+
+
+svg.w-5.h-5 {
+    /*paginateメソッドの矢印の大きさ調整のために追加*/
+    width: 30px;
+    height: 30px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

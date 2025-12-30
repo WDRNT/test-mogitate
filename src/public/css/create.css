@@ -1,0 +1,130 @@
+.layout {
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.form-layout{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title-layout{
+    display: flex;
+    gap: 10px;
+}
+
+.text-layout textarea{
+    height: 160px;
+    resize: none;
+}
+
+.text-layout input,
+.text-layout textarea{
+    width: 100%;
+    padding: 11px 10px;
+    border: solid 1px #E0DFDE;
+}
+
+.required{
+    background-color: red;
+    color: white;
+    padding: 0 5px;
+}
+
+.text-red{
+    color: red;
+}
+
+.checkbox-group {
+    display: flex;
+    gap: 50px;
+}
+
+.checkbox-item input {
+    display: none;
+}
+
+.checkbox-item span {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* 丸い外枠 */
+.checkbox-item span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    border: 1px solid #4B4B4B;
+    border-radius: 50%;
+}
+
+/* チェック時：丸を塗りつぶす */
+.checkbox-item input:checked+span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    background: #4B4B4B;
+    border-radius: 50%;
+}
+
+/* チェックマーク（抜き） */
+.checkbox-item input:checked+span::after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    transform: translateY(-60%) rotate(45deg);
+
+    width: 5px;
+    height: 9px;
+
+    border-right: 2px solid #fff;
+    /* ← 背景色 */
+    border-bottom: 2px solid #fff;
+    /* ← 背景色 */
+}
+
+.flex-button {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap: 20px;
+}
+
+.flex-button a {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    background-color: #E0DFDE;
+    text-align: center;
+}
+
+.flex-button button {
+    border: none;
+    background-color: #F5C800;
+}
+
+.flex-button a,
+.flex-button button{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    padding: 13px 10px;
+    box-shadow: 0 4px 10px #0000001A;
+}
+
+::placeholder {
+    color: #999;
+}
