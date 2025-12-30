@@ -1,0 +1,13 @@
+# env
+.env
+
+# Docker
+docker/mysql/data/
+
+# Laravel
+vendor/
+node_modules/
+storage/logs/
+storage/framework/
+bootstrap/cache/
+
